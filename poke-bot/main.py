@@ -4,7 +4,7 @@ import requests
 from bs4 import BeautifulSoup
 
 # DISCORD SETUP
-DISCORD_TOKEN = "YOUR_DISCORD_TOKEN_HERE"
+DISCORD_TOKEN = ""
 PREFIX = "!"
 
 bot = commands.Bot(command_prefix=PREFIX, intents=discord.Intents.all())
@@ -48,7 +48,7 @@ def fetch_pokemon_data():
     except Exception as e:
         return None, str(e)
 
-@bot.command()
+@bot.command("pokemon")
 async def pokemon(ctx, name: str):
     pokemons, error = fetch_pokemon_data()
 
