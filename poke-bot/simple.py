@@ -4,7 +4,7 @@ import requests
 from bs4 import BeautifulSoup
 
 # DISCORD SETUP
-DISCORD_TOKEN = "MTE1MTQ5OTMyMTU0NDU0MDE5MQ.Gydbti.Gh-8uoVeREg1cePvOaQW94D7QWUBP74uEd_sa4"
+DISCORD_TOKEN = ""
 PREFIX = "!"
 
 bot = commands.Bot(command_prefix=PREFIX, intents=discord.Intents.all())
