@@ -49,7 +49,7 @@ def fetch_pokemon_data():
         return None, str(e)
 
 @bot.command("pokemon")
-async def pokemon(ctx, name: str):
+async def find_pokemon(ctx, name: str):
     pokemons, error = fetch_pokemon_data()
 
     if error:
